@@ -9,10 +9,16 @@
 //   )
 // }
 
+// const newMessage = { key: 'hola' };
+
+const getSaludo = (name) => 'Hola: ' + name;
+
 export const FirstApp = () => {
     return (
         <>
-            <h1>Irwin</h1>
+            {/* <code>{ JSON.stringify(newMessage) }</code> */}
+            <h1>Hola Mundo</h1>
+            <h1>{getSaludo('Irwin')}</h1>
             <p>Soy un subtitulo</p>
         </>
     )
