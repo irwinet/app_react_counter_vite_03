@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // import { Fragment } from 'react'
 
 // export const FirstApp = () => {
@@ -13,13 +14,15 @@
 
 const getSaludo = (name) => 'Hola: ' + name;
 
-export const FirstApp = () => {
+export const FirstApp = ({ title = 'Hola Soy Irwin', subTitle }) => {
+    // console.log(props);
+
     return (
         <>
             {/* <code>{ JSON.stringify(newMessage) }</code> */}
-            <h1>Hola Mundo</h1>
+            <h1>{ title }</h1>
             <h1>{getSaludo('Irwin')}</h1>
-            <p>Soy un subtitulo</p>
+            <p>{subTitle + 1}</p>
         </>
     )
 }
