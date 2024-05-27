@@ -16,7 +16,7 @@ import PropTypes from 'prop-types';
 
 const getSaludo = (name) => 'Hola: ' + name;
 
-export const FirstApp = ({ title = 'Hola Soy Irwin', subTitle }) => {
+export const FirstApp = ({title, subTitle}) => {
     // console.log(props);
 
     return (
@@ -32,4 +32,10 @@ export const FirstApp = ({ title = 'Hola Soy Irwin', subTitle }) => {
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,    
     subTitle: PropTypes.number.isRequired,    
+}
+
+FirstApp.defaultProps = {
+    name: 'Irwin',
+    subTitle: 1,
+    title: 'Titulo Default',
 }
