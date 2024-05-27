@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 
 export const CounterApp = ({ value }) => {
-
+  
   const [counter, setCounter] = useState(value);
 
   // eslint-disable-next-line no-unused-vars
@@ -14,12 +14,22 @@ export const CounterApp = ({ value }) => {
     // setCounter((c) => c+1);
   }  
 
+  const handleSubtract = () => setCounter(counter-1);
+
+  const handleReset= () => setCounter(value);
+
   return (
     <>
         <h1>CounterApp</h1>
         <h2> { counter } </h2>
-        <button onClick={ handleAdd }>
+        <button onClick={ handleAdd } className='btn btn-primary'>
             +1
+        </button>
+        <button onClick={ handleSubtract } className='btn btn-primary'>
+            -1
+        </button>
+        <button onClick={ handleReset } className='btn btn-primary'>
+            Reset
         </button>
     </>
   )
