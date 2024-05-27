@@ -12,6 +12,8 @@
 
 // const newMessage = { key: 'hola' };
 
+import PropTypes from 'prop-types';
+
 const getSaludo = (name) => 'Hola: ' + name;
 
 export const FirstApp = ({ title = 'Hola Soy Irwin', subTitle }) => {
@@ -25,4 +27,9 @@ export const FirstApp = ({ title = 'Hola Soy Irwin', subTitle }) => {
             <p>{subTitle + 1}</p>
         </>
     )
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,    
+    subTitle: PropTypes.number.isRequired,    
 }
