@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 
 # Add packages
 - yarn add prop-types
+- yarn add --dev @types/jest
