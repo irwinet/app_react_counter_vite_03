@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 // import { Fragment } from 'react'
 
@@ -23,7 +24,7 @@ export const FirstApp = ({title, subTitle, name}) => {
         <>
             {/* <code>{ JSON.stringify(newMessage) }</code> */}
             <h1 data-testid="test-title">{ title }</h1>
-            <h1>{getSaludo('Irwin')}</h1>
+            {/* <h1>{getSaludo('Irwin')}</h1> */}
             <p>{subTitle}</p>
             <p>{subTitle}</p>
             <p>{name}</p>
