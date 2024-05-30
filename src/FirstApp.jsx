@@ -22,9 +22,10 @@ export const FirstApp = ({title, subTitle, name}) => {
     return (
         <>
             {/* <code>{ JSON.stringify(newMessage) }</code> */}
-            <h1>{ title }</h1>
+            <h1 data-testid="test-title">{ title }</h1>
             <h1>{getSaludo('Irwin')}</h1>
-            <p>{subTitle + 1}</p>
+            <p>{subTitle}</p>
+            <p>{subTitle}</p>
             <p>{name}</p>
         </>
     )
