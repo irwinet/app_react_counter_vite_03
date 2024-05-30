@@ -16,7 +16,7 @@ import PropTypes from 'prop-types';
 
 const getSaludo = (name) => 'Hola: ' + name;
 
-export const FirstApp = ({title, subTitle}) => {
+export const FirstApp = ({title, subTitle, name}) => {
     // console.log(props);
 
     return (
@@ -25,6 +25,7 @@ export const FirstApp = ({title, subTitle}) => {
             <h1>{ title }</h1>
             <h1>{getSaludo('Irwin')}</h1>
             <p>{subTitle + 1}</p>
+            <p>{name}</p>
         </>
     )
 }

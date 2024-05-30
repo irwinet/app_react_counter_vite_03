@@ -12,3 +12,16 @@ Currently, two official plugins are available:
 - yarn add --dev @types/jest
 - yarn add --dev babel-jest @babel/core @babel/preset-env
 - yarn add -D whatwg-fetch
+- yarn add --dev @testing-library/react
+
+# Example
+
+````javascript
+/* eslint-disable no-undef */
+
+describe('Pruebas en ...', () => { 
+    test('getUser debe de retornar un objeto', () => {
+        console.log('Hola ReactJS');
+    });
+});
+```
