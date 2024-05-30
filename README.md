@@ -11,3 +11,4 @@ Currently, two official plugins are available:
 - yarn add prop-types
 - yarn add --dev @types/jest
 - yarn add --dev babel-jest @babel/core @babel/preset-env
+- yarn add -D whatwg-fetch
